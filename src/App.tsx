@@ -1,26 +1,21 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Route, Routes } from "react-router-dom";
 
-import logo from './logo.svg';
 import './App.css';
-import { routes } from './routes/routes';
 import Home from './pages/Home/Home';
+import { routes } from './routes/routes';
 
 function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<>Loading...</>}>
       <Routes>
-        {/* {
-              routes.map((item) => (
-                <Route
-                  element={item.path}
-                  path={item.path}
-                  key={item.path}
-                />
-              ))
-            } */}
-        <Route path="/" element={<Home />}></Route>
-
+        {routes.map((obj) => {
+          return <Route
+          key={obj.name}
+          path={obj.path}
+          element={<obj.element/>}
+          />
+        })}
       </Routes>
     </Suspense>
   );
