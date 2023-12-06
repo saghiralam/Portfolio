@@ -1,9 +1,10 @@
-import React from 'react'
+import {FC} from 'react';
 
-const Home = () => {
+const Home:FC = () => {
   return (
     <div>Home</div>
   )
 }
 
+Home.displayName = "Home";
 export default Home;
