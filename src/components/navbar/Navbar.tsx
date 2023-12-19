@@ -7,12 +7,17 @@ const Navbar = () => {
     {label:"Contact", value:"Contact"}
   ]
   return (
-    <div className='nav'>
+    <div className='nav flex-between'>
+      <div className='nav'>
       {navs.map((item, ind)=>{
         return(
-          <p className='nav-p'>{item.label}</p>
+          <p className='nav-items'>{item.label}</p>
         )
       })}
+      </div>
+      <div>
+        <img src="../../assets/headIcon.png" alt="saghir" />
+      </div>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 /*-- CSS FILE IMPORTS--*/
 @import url("font.css");
+@import url("flex.css");
 
 body {
     margin: 0;
@@ -17,14 +18,17 @@ code {
 }
 
 .nav {
-    display:flex;
+    display:flex !important;
     align-items: center;
     width: 100vw;
     height: 12vh;
     background-color: rgb(144, 116, 75);
     color: azure;
+    margin: 2rem 0;
 }
 
-.nav-p{
+.nav-items{
     margin: 2rem;
+    font-size: x-large;
+    cursor: pointer;
 }
