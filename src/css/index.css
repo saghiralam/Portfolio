@@ -18,17 +18,31 @@ code {
 }
 
 .nav {
-    display:flex !important;
+    display: flex !important;
     align-items: center;
     width: 100vw;
     height: 12vh;
     background-color: rgb(144, 116, 75);
     color: azure;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
 }
 
-.nav-items{
+.nav-items {
     margin: 2rem;
     font-size: x-large;
     cursor: pointer;
+}
+
+.main {
+    background: rgb(241, 223, 201);
+    height: 73vh;
+    text-align: center;
+
+}
+
+.footer {
+    background: rgb(57, 56, 56);
+    color: whitesmoke;
+    height: 15vh;
+    text-align: center;
 }
